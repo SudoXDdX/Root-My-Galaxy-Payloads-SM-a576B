@@ -5,38 +5,10 @@
       "payloadId": "galaxy-s25-series-2026-06-07",
       "displayName": "Galaxy S25 series | Kernel 6.6.98",
       "models": [
-        "SM-S9310",
-        "SM-S931B",
-        "SM-S931N",
-        "SM-S931Q",
-        "SM-S931U",
-        "SM-S931U1",
-        "SM-S931W",
-        "SM-S931Z",
-        "SC-51F",
-        "SCG31",
-        "SM-S9360",
-        "SM-S936B",
-        "SM-S936N",
-        "SM-S936U",
-        "SM-S936U1",
-        "SM-S936W",
-        "SM-S9370",
-        "SM-S937B",
-        "SM-S937N",
-        "SM-S937U",
-        "SM-S937U1",
-        "SM-S937W",
-        "SM-S9380",
-        "SM-S938B",
-        "SM-S938N",
-        "SM-S938Q",
-        "SM-S938U",
-        "SM-S938U1",
-        "SM-S938W",
-        "SM-S938Z",
-        "SC-52F",
-        "SCG32"
+        "SM-S9310", "SM-S931B", "SM-S931N", "SM-S931Q", "SM-S931U", "SM-S931U1", "SM-S931W", "SM-S931Z",
+        "SC-51F", "SCG31", "SM-S9360", "SM-S936B", "SM-S936N", "SM-S936U", "SM-S936U1", "SM-S936W",
+        "SM-S9370", "SM-S937B", "SM-S937N", "SM-S937U", "SM-S937U1", "SM-S937W", "SM-S9380", "SM-S938B",
+        "SM-S938N", "SM-S938Q", "SM-S938U", "SM-S938U1", "SM-S938W", "SM-S938Z", "SC-52F", "SCG32"
       ],
       "kernelVersions": ["6.6.98"],
       "exploit": {
@@ -161,20 +133,6 @@
       "kernelsu": {
         "url": "https://raw.githubusercontent.com/BuSung-dev/Root-My-Galaxy-Payloads/main/kernelsu/ksud-e1s-S921NKSSFDZF3-kdp",
         "size": 4758872
-      },
-    { 
-      "payloadId": "e1s-S921NKSSFDZF3",
-      "displayName": "Galaxy S24 | Kernel 6.1.157",
-      "models": ["SM-S921N"],
-      "kernelVersions": ["6.1.157"],
-      "requiresFreshP0Session": true,
-      "exploit": {
-        "url": "https://raw.githubusercontent.com/BuSung-dev/Root-My-Galaxy-Pay>
-        "size": 104128
-      },
-      "kernelsu": {
-        "url": "https://raw.githubusercontent.com/BuSung-dev/Root-My-Galaxy-Pay>
-        "size": 4758872
       }
     },
     {
@@ -192,6 +150,4 @@
       }
     }
   ]
-}    
-  
-
+}
