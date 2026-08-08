@@ -161,7 +161,37 @@
       "kernelsu": {
         "url": "https://raw.githubusercontent.com/BuSung-dev/Root-My-Galaxy-Payloads/main/kernelsu/ksud-e1s-S921NKSSFDZF3-kdp",
         "size": 4758872
+      },
+    { 
+      "payloadId": "e1s-S921NKSSFDZF3",
+      "displayName": "Galaxy S24 | Kernel 6.1.157",
+      "models": ["SM-S921N"],
+      "kernelVersions": ["6.1.157"],
+      "requiresFreshP0Session": true,
+      "exploit": {
+        "url": "https://raw.githubusercontent.com/BuSung-dev/Root-My-Galaxy-Pay>
+        "size": 104128
+      },
+      "kernelsu": {
+        "url": "https://raw.githubusercontent.com/BuSung-dev/Root-My-Galaxy-Pay>
+        "size": 4758872
+      }
+    },
+    {
+      "payloadId": "a57x-A576BXXS4AZG5",
+      "displayName": "Galaxy A57 5G | Kernel 6.12.38",
+      "models": ["SM-A576B"],
+      "kernelVersions": ["6.12.38"],
+      "exploit": {
+        "url": "https://raw.githubusercontent.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576b/main/artifacts/a57x-A576BXXS4AZG5/bin/preload.so",
+        "size": 153720
+      },
+      "kernelsu": {
+        "url": "https://raw.githubusercontent.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576b/main/kernelsu/ksud-a57x-A576BXXS4AZG5-kdp",
+        "size": 4765336
       }
     }
   ]
-}
+}    
+  
+
