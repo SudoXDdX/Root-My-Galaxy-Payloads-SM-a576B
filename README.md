@@ -1,5 +1,6 @@
 # Root My Galaxy Payloads
 Note: im still fixing it, i forked it because im testing, please wait :)
+
 This repository contains the device-specific native side of
 [Root My Galaxy](https://github.com/BuSung-dev/Root-My-Galaxy):
 
@@ -82,3 +83,5 @@ The SM-A366W AYG1 device validation is in
 [`docs/SM-A366W-A366WVLS3AYG1.md`](docs/SM-A366W-A366WVLS3AYG1.md).
 
 Use only on devices you own or are explicitly authorized to test.
+
+hi there! xd
