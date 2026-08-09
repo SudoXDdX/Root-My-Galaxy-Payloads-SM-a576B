@@ -141,11 +141,11 @@
       "models": ["SM-A576B"],
       "kernelVersions": ["6.12.38"],
       "exploit": {
-        "url": "https://cdn.jsdelivr.net/gh/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576b@main/artifacts/a57x-A576BXXS4AZG5/bin/preload.so",
+        "url": "https://github.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576B/releases/download/tag/preload.so",
         "size": 4761704
       },
       "kernelsu": {
-        "url": "https://cdn.jsdelivr.net/gh/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576b@main/kernelsu/ksud-a57x-A576BXXS4AZG5-kdp",
+        "url": "https://github.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576B/releases/download/tag/android16-6.12_kernelsu.ko",
         "size": 4761704
 
       }
