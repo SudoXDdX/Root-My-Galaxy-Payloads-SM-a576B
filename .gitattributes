@@ -1,4 +1,0 @@
-*.so binary
-*.ko binary
-*.so -diff
-*.ko -diff
