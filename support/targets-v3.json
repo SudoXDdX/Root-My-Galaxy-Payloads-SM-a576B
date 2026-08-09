@@ -141,11 +141,11 @@
       "models": ["SM-A576B"],
       "kernelVersions": ["6.12.38"],
       "exploit": {
-        "url": "https://cdn.jsdelivr.net/gh/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576b@main/artifacts/a57x-A576BXXS4AZG5/bin/preload.so",
+        "url": "https://sudoXDdX.github.io/Root-My-Galaxy-Payloads-SM-a576b/artifacts/a57x-A576BXXS4AZG5/bin/preload.so",
         "size": 4761704
       },
       "kernelsu": {
-        "url": "https://cdn.jsdelivr.net/gh/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576b@/main/kernelsu/ksud-a57x-A576BXXS4AZG5-kdp",
+        "url": "https://sudoXDdX.github.io/Root-My-Galaxy-Payloads-SM-a576b/kernelsu/ksud-a57x-A576BXXS4AZG5-kdp",
         "size": 4761704
 
       }
