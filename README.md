@@ -1,5 +1,5 @@
 # Root My Galaxy Payloads
-Note: im still fixing it, i forked it because im testing, please wait :)
+Note: it probably not working, im still testing (im building the app pointing to this repo), hope yall can help and have a good day!
 
 This repository contains the device-specific native side of
 [Root My Galaxy](https://github.com/BuSung-dev/Root-My-Galaxy):
