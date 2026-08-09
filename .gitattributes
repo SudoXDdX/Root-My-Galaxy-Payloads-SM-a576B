@@ -1,1 +1,4 @@
-support/targets-v2.json text eol=lf
+*.so binary
+*.ko binary
+*.so -diff
+*.ko -diff
