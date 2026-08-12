@@ -103,7 +103,7 @@ static inline u32 jhash2(const u32 *k, u32 length, u32 initval)
     u32 a, b, c;
 
     /* Set up the internal state */
-    a = b = c = JHASH_INITVAL + initval;
+    a = b = c = JHASH_INITVAL + (length<<2) + initval;
 
     /* Handle most of the key */
     while (length > 3) {
