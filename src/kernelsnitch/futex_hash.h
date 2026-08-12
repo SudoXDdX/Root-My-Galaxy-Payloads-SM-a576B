@@ -103,7 +103,7 @@ static inline u32 jhash2(const u32 *k, u32 length, u32 initval)
     u32 a, b, c;
 
     /* Set up the internal state */
-    a = b = c = JHASH_INITVAL + (length<<2) + initval;
+    a = b = c = JHASH_INITVAL + initval;
 
     /* Handle most of the key */
     while (length > 3) {
@@ -186,9 +186,10 @@ typedef union {
 
 uint32_t futex_hash_no_trunc(futex_key_t *key)
 {
+    
+    
     uint32_t hash = jhash2((uint32_t *)key, OFFSET_OF(typeof(*key), both.offset) / 4,
               key->both.offset);
-
     return hash;
 }
 
