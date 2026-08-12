@@ -220,7 +220,7 @@
       ],
       "exploit": {
   "url": "https://raw.githubusercontent.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576B/main/artifacts/a57x-A576BXXS4AZG5/bin/preload.so",
-  "size": 139128
+  "size": 138920
 },
 "kernelsu": {
   "url": "https://raw.githubusercontent.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576B/main/kernelsu/ksud-a57x-A576BXXS4AZG5-kdp",
