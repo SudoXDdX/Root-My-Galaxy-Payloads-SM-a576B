@@ -183,7 +183,7 @@ static size_t __measure(
     for (size_t l = 0; l < ks->repeat_measurement; ++l) {
         sched_yield();
         t0 = rdtsc_begin();
-        SYSCHK(__futex((unsigned int *)futex_addr, FUTEX_WAKE_PRIVATE, 0, NULL, NULL, 0));
+        SYSCHK(__futex((unsigned int *)futex_addr, FUTEX_WAKE_PRIVATE, 1, NULL, NULL, 0));
         t1 = rdtsc_end();
         __times[l] = t1 - t0;
     }
