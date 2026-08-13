@@ -190,6 +190,7 @@ static size_t __measure(
         t0 = rdtsc_begin();
         SYSCHK(__futex((unsigned int *)futex_addr, FUTEX_WAKE_PRIVATE, 1, NULL, NULL, 0));
         t1 = rdtsc_end();
+        sched_yield();
         __times[l] = t1 - t0;
     }
     qsort(__times, ks->repeat_measurement, sizeof(size_t), __compare);
