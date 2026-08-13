@@ -222,6 +222,6 @@ uint32_t futex_hash(size_t addr, size_t mm)
     futex_key_t key;
     key.private.mm = (void *)mm;
     key.private.address = addr & ~KS_PAGE_MASK;
-    key.private.offset = 0;
+    key.private.offset = addr & KS_PAGE_MASK;
     return __futex_hash(&key, futex_hashsize);
 }
