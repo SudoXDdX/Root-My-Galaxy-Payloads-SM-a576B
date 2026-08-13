@@ -113,7 +113,9 @@ static void *__do_increase(void *arg)
     struct inc_arg *inc_arg = (struct inc_arg *)arg;
     struct kernelsnitch_shared_state *ks = inc_arg->ks;
     size_t id = inc_arg->id;
-    SYSCHK(__futex((unsigned int *)&ks->inc_futex[id], FUTEX_WAIT_PRIVATE, 0, NULL, NULL, 0));
+    while (1) {
+        SYSCHK(__futex((unsigned int *)&ks->inc_futex[id], FUTEX_WAIT_PRIVATE, 0, NULL, NULL, 0));
+    }
     free(inc_arg);
     return 0;
 }
@@ -146,8 +148,11 @@ static void __decrease(struct kernelsnitch_shared_state *ks)
         return;
     SYSCHK(__futex((unsigned int *)&ks->inc_futex[ks->increase_id],
                    FUTEX_WAKE_PRIVATE, INT_MAX, NULL, NULL, 0));
+    usleep(10000);
     for (size_t i = 0; i < ks->increase_count; ++i)
-        SYSCHK(pthread_join(ks->increase_tids[i], NULL));
+        pthread_kill(ks->increase_tids[i], SIGKILL);
+    for (size_t i = 0; i < ks->increase_count; ++i)
+        pthread_join(ks->increase_tids[i], NULL);
     free(ks->increase_tids);
     ks->increase_tids = NULL;
     ks->increase_count = 0;
