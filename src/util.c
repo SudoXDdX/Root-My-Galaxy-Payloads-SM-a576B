@@ -302,7 +302,7 @@ void setup_kernelsnitch(void) {
   int cpu_count = (int)sysconf(_SC_NPROCESSORS_ONLN);
 #if defined(APP_REQUIRE_FRESH_P0_SESSION) && APP_REQUIRE_FRESH_P0_SESSION
   ks = kernelsnitch_setup(
-      MM_STRUCT_SZ, 0, cpu_count, KSNITCH_COLLISIONS,
+      MM_STRUCT_SZ, MM_ORDER, cpu_count, KSNITCH_COLLISIONS,
       KERNELSNITCH_VERBOSE, KERNELSNITCH_MTE_ENABLED);
   configure_kernelsnitch_profile(ks, PAGE_PAYLOAD_SLIDE);
 #else

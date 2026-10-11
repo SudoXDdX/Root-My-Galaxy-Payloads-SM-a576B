@@ -151,8 +151,14 @@ static void __decrease(struct kernelsnitch_shared_state *ks)
     usleep(10000);
     for (size_t i = 0; i < ks->increase_count; ++i)
         pthread_kill(ks->increase_tids[i], SIGKILL);
+    /*
+     * Android 16 bionic (SM-A576B): pthread_join de thread morta via SIGKILL
+     * nunca retorna (reproduzido isoladamente: trava ate' com 1 thread).
+     * As threads ja' estao mortas pelo sinal; o detach apenas descarta o
+     * recurso sem esperar, e o exit() do leak_child recolhe o resto.
+     */
     for (size_t i = 0; i < ks->increase_count; ++i)
-        pthread_join(ks->increase_tids[i], NULL);
+        pthread_detach(ks->increase_tids[i]);
     free(ks->increase_tids);
     ks->increase_tids = NULL;
     ks->increase_count = 0;
