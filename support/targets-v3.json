@@ -210,7 +210,7 @@
       }
     },
     {
-      "payloadId": "a57x-A576BXXS4AZG5",
+      "payloadId": "a57x-A576BXXS6AZI2",
       "displayName": "Galaxy A57 5G | Kernel 6.12.38",
       "models": [
         "SM-A576B"
@@ -219,13 +219,14 @@
         "6.12.38"
       ],
       "exploit": {
-  "url": "https://raw.githubusercontent.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576B/main/artifacts/a57x-A576BXXS4AZG5/bin/preload.so",
-  "size": 138920
-},
-"kernelsu": {
-  "url": "https://raw.githubusercontent.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576B/main/kernelsu/ksud-a57x-A576BXXS4AZG5-kdp",
-  "size": 4761704
-}
+        "url": "https://raw.githubusercontent.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576B/main/artifacts/a57x-A576BXXS6AZI2/bin/preload.so",
+        "size": 139624
+      },
+      "kernelsu": {
+        "url": "https://raw.githubusercontent.com/SudoXDdX/Root-My-Galaxy-Payloads-SM-a576B/main/kernelsu/ksud-a57x-A576BXXS6AZI2-kdp",
+        "size": 4761704
+      },
+      "requiresFreshP0Session": true
     }
   ]
 }
